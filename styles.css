@@ -381,7 +381,7 @@ img {
       "cabecera cabecera cabecera"
       "menu principal lateral"
       "pie pie pie";
-    grid-template-columns: 13% minmax(0, 1fr) 21%;
+    grid-template-columns: 18% minmax(0, 1fr) 20%;
   }
 
   .cabecera {
@@ -404,7 +404,10 @@ img {
 
   .menu a {
     flex: none;
+    font-size: 0.74rem;
     justify-content: flex-start;
+    letter-spacing: 0.08em;
+    padding: 0.65rem 0.7rem;
   }
 
   .principal {
