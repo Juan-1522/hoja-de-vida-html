@@ -839,6 +839,10 @@ body.fan {
   text-transform: uppercase;
 }
 
+.galeria.tres img {
+  max-width: 11rem;
+}
+
 .salto {
   margin-top: var(--paso-3);
 }
@@ -913,6 +917,112 @@ body.fan {
   text-transform: uppercase;
 }
 
+/* Pagina de fan: Bring Me The Horizon */
+
+.fan.bmth {
+  --oxido: #a8272e;
+  --niebla-fria: #b8912f;
+}
+
+.discos {
+  display: grid;
+  gap: var(--paso-3);
+  grid-template-columns: 1fr;
+  list-style: none;
+  margin: var(--paso-3) 0 0;
+  padding: 0;
+}
+
+.disco {
+  border-top: 1px solid var(--regla-fan);
+  display: grid;
+  gap: var(--paso-2);
+  grid-template-columns: 1fr;
+  padding-top: var(--paso-2);
+}
+
+.disco > img {
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--regla-fan);
+  display: block;
+  max-width: 11rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.disco .pendiente {
+  max-width: 11rem;
+  min-height: 11rem;
+}
+
+.anio {
+  color: var(--niebla-fria);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  margin: 0 0 0.35rem;
+}
+
+.disco h3 {
+  font-size: 1.2rem;
+  margin: 0 0 0.6rem;
+}
+
+.disco p {
+  font-size: 0.98rem;
+  margin: 0 0 0.6rem;
+}
+
+.disco .temas {
+  color: var(--tinta-suave-fan);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.disco.fav {
+  background-color: var(--superficie-fan);
+  border-left: 2px solid var(--oxido);
+  padding-left: var(--paso-2);
+}
+
+.marca {
+  background-color: var(--oxido);
+  color: #f4efe6;
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  padding: 0.2rem 0.5rem;
+  text-transform: uppercase;
+  vertical-align: 0.25em;
+}
+
+.apunte {
+  background-color: var(--superficie-fan);
+  border: 1px dashed var(--regla-fan);
+  margin-top: var(--paso-3);
+  padding: var(--paso-2);
+}
+
+.apunte-marco {
+  color: var(--oxido);
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.2em;
+  margin: 0 0 0.4rem;
+  text-transform: uppercase;
+}
+
+.apunte p:last-child {
+  color: var(--tinta-suave-fan);
+  font-size: 0.95rem;
+  font-style: italic;
+  margin: 0;
+}
+
 @media (min-width: 640px) {
   h1 {
     font-size: 3.2rem;
@@ -968,6 +1078,25 @@ body.fan {
 
   .fila {
     grid-template-columns: 7rem 1fr 1fr;
+  }
+
+  .disco {
+    align-items: start;
+    gap: var(--paso-3);
+    grid-template-columns: 11rem 1fr;
+  }
+
+  .disco > img,
+  .disco .pendiente {
+    max-width: none;
+  }
+
+  .galeria.tres {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .galeria.tres img {
+    max-width: none;
   }
 }
 
@@ -1073,6 +1202,18 @@ body.fan {
     align-self: start;
     position: sticky;
     top: var(--paso-3);
+  }
+
+  .discos {
+    gap: var(--paso-4);
+  }
+
+  .disco {
+    grid-template-columns: 13rem minmax(0, 1fr);
+  }
+
+  .disco h3 {
+    font-size: 1.45rem;
   }
 }
 
