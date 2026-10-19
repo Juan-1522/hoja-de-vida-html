@@ -410,6 +410,43 @@ img {
   font-size: 0.95rem;
 }
 
+.habilidades {
+  display: grid;
+  gap: var(--paso-3);
+  grid-template-columns: 1fr;
+}
+
+.subtitulo {
+  color: var(--tinta-suave);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  margin: 0 0 var(--paso-1);
+  text-transform: uppercase;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chips li {
+  background-color: var(--acento-tenue);
+  border: 1px solid var(--regla);
+  border-radius: 999px;
+  color: var(--tinta-media);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  margin: 0;
+  padding: 0.28rem 0.7rem;
+}
+
 @media (min-width: 640px) {
   h1 {
     font-size: 3.2rem;
