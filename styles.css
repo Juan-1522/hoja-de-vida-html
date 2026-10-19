@@ -609,6 +609,310 @@ img {
   font-size: 0.85em;
 }
 
+.fan {
+  --fondo-fan: #0b0d0f;
+  --superficie-fan: #121518;
+  --tinta-fan: #ddd9d2;
+  --tinta-media-fan: #a3a9ac;
+  --tinta-suave-fan: #6d7478;
+  --regla-fan: #262b2f;
+  --oxido: #9c4630;
+  --niebla-fria: #5d8189;
+}
+
+body.fan {
+  background-color: var(--fondo-fan);
+  color: var(--tinta-fan);
+  font-family: "Spectral", Georgia, "Times New Roman", serif;
+  font-size: 1.06rem;
+  line-height: 1.75;
+  max-width: none;
+  padding: 0;
+}
+
+.fan h1,
+.fan h2,
+.fan h3 {
+  color: var(--tinta-fan);
+  font-family: "Anton", "Arial Narrow", Impact, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.fan p {
+  color: var(--tinta-media-fan);
+}
+
+.fan a {
+  color: var(--tinta-fan);
+  text-decoration-color: var(--oxido);
+}
+
+.portada {
+  align-items: end;
+  display: grid;
+  min-height: 62vh;
+  padding: var(--paso-3);
+  position: relative;
+}
+
+.portada-fondo {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.portada::after {
+  background-image: linear-gradient(180deg, rgba(11, 13, 15, 0.3) 0%, rgba(11, 13, 15, 0.7) 55%, var(--fondo-fan) 100%);
+  content: "";
+  inset: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.portada-caja {
+  max-width: 46rem;
+  position: relative;
+  z-index: 2;
+}
+
+.marco {
+  color: var(--oxido);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.24em;
+  margin: 0 0 var(--paso-2);
+  text-transform: uppercase;
+}
+
+.portada h1 {
+  font-size: 3.1rem;
+  line-height: 0.94;
+  margin: 0 0 var(--paso-2);
+}
+
+.portada h1 .y {
+  color: var(--oxido);
+  display: block;
+  font-family: "Spectral", Georgia, serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  letter-spacing: 0.3em;
+  margin: 0.6rem 0;
+  text-transform: lowercase;
+}
+
+.portada h1 .num {
+  color: var(--niebla-fria);
+}
+
+.bajada {
+  border-left: 2px solid var(--oxido);
+  color: var(--tinta-media-fan);
+  font-size: 1.12rem;
+  font-style: italic;
+  margin: 0;
+  padding-left: var(--paso-2);
+}
+
+.fan .menu {
+  padding: 0 var(--paso-3) var(--paso-3);
+}
+
+.fan .menu a {
+  background-color: transparent;
+  border-color: var(--regla-fan);
+  color: var(--tinta-media-fan);
+}
+
+.fan .menu a:hover,
+.fan .menu a:focus {
+  background-color: rgba(156, 70, 48, 0.12);
+  border-color: var(--oxido);
+  color: var(--tinta-fan);
+}
+
+.fan .menu a.activo {
+  background-color: var(--oxido);
+  border-color: var(--oxido);
+  color: #0b0d0f;
+}
+
+.fan .menu a.activo::before {
+  color: rgba(11, 13, 15, 0.55);
+}
+
+.fan-cuerpo {
+  display: grid;
+  gap: var(--paso-3);
+  margin: 0 auto;
+  max-width: 74rem;
+  padding: 0 var(--paso-3) var(--paso-5);
+}
+
+.bloque {
+  border-top: 1px solid var(--regla-fan);
+  padding-top: var(--paso-3);
+}
+
+.bloque + .bloque {
+  margin-top: var(--paso-4);
+}
+
+.bloque h2 {
+  font-size: 1.5rem;
+  margin: 0 0 var(--paso-2);
+}
+
+.bloque > .etiqueta {
+  color: var(--tinta-suave-fan);
+}
+
+.lead {
+  color: var(--tinta-fan);
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: var(--paso-3);
+}
+
+.ficha {
+  display: grid;
+  gap: var(--paso-2);
+  grid-template-columns: 1fr;
+  margin: 0;
+}
+
+.fila {
+  border: 1px solid var(--regla-fan);
+  display: grid;
+  gap: var(--paso-1);
+  grid-template-columns: 1fr;
+  padding: var(--paso-2);
+}
+
+.fila .etiqueta {
+  color: var(--niebla-fria);
+  margin: 0;
+}
+
+.celda strong {
+  color: var(--tinta-fan);
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+.celda p {
+  font-size: 0.98rem;
+  margin: 0;
+}
+
+.galeria {
+  display: grid;
+  gap: var(--paso-2);
+  grid-template-columns: 1fr;
+  margin: var(--paso-3) 0 0;
+}
+
+.galeria figure {
+  margin: 0;
+}
+
+.galeria img {
+  border: 1px solid var(--regla-fan);
+}
+
+.galeria figcaption {
+  color: var(--tinta-suave-fan);
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+.salto {
+  margin-top: var(--paso-3);
+}
+
+.pendiente {
+  border: 1px dashed var(--regla-fan);
+  color: var(--tinta-suave-fan);
+  display: grid;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  min-height: 9rem;
+  place-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cita {
+  border-left: 2px solid var(--niebla-fria);
+  color: var(--tinta-fan);
+  font-size: 1.15rem;
+  font-style: italic;
+  margin: var(--paso-3) 0 0;
+  padding-left: var(--paso-2);
+}
+
+.cita + .firma {
+  color: var(--tinta-suave-fan);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  margin: 0.6rem 0 0;
+  text-transform: uppercase;
+}
+
+.fan .lateral {
+  background-color: var(--superficie-fan);
+  border: 1px solid var(--regla-fan);
+  color: var(--tinta-media-fan);
+  grid-area: auto;
+}
+
+.fan .lateral h2 {
+  border-bottom-color: var(--regla-fan);
+  color: var(--tinta-suave-fan);
+}
+
+.fan .lateral dt {
+  color: var(--niebla-fria);
+}
+
+.fan .lateral dd {
+  color: var(--tinta-fan);
+}
+
+.fan .lateral li {
+  border-bottom-color: var(--regla-fan);
+}
+
+.fan .lateral a {
+  color: var(--tinta-media-fan);
+}
+
+.fan .pie-fan {
+  border-top: 1px solid var(--regla-fan);
+  color: var(--tinta-suave-fan);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  margin: 0 var(--paso-3);
+  padding: var(--paso-3) 0;
+  text-transform: uppercase;
+}
+
 @media (min-width: 640px) {
   h1 {
     font-size: 3.2rem;
@@ -656,6 +960,14 @@ img {
 
   .habilidades {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .portada h1 {
+    font-size: 4.6rem;
+  }
+
+  .fila {
+    grid-template-columns: 7rem 1fr 1fr;
   }
 }
 
@@ -715,6 +1027,52 @@ img {
 
   .tarjetas {
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+
+  .portada {
+    min-height: 74vh;
+    padding: var(--paso-5);
+  }
+
+  .portada h1 {
+    font-size: 6.4rem;
+  }
+
+  .fan-cuerpo {
+    grid-template-columns: minmax(0, 1fr) 16rem;
+    padding-left: var(--paso-5);
+    padding-right: var(--paso-5);
+  }
+
+  .fan .menu {
+    padding: 0 var(--paso-5) var(--paso-4);
+  }
+
+  .fan .menu ul {
+    flex-direction: row;
+  }
+
+  .fan .menu li {
+    flex: 1;
+  }
+
+  .fan .menu a {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .galeria .ancha {
+    grid-column: 1 / -1;
+  }
+
+  .fan .lateral {
+    align-self: start;
+    position: sticky;
+    top: var(--paso-3);
   }
 }
 
