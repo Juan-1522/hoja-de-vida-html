@@ -505,6 +505,103 @@ img {
   text-transform: uppercase;
 }
 
+.lateral {
+  background-color: var(--superficie);
+  border: 1px solid var(--regla);
+  border-radius: var(--radio);
+  font-size: 0.92rem;
+  padding: var(--paso-2);
+}
+
+.lateral h2 {
+  border-bottom: 1px solid var(--regla);
+  color: var(--tinta-suave);
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  margin: 0 0 var(--paso-2);
+  padding-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+
+.lateral h2:not(:first-child) {
+  margin-top: var(--paso-3);
+}
+
+.lateral dl {
+  margin: 0;
+}
+
+.lateral dt {
+  color: var(--tinta-suave);
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  margin-top: var(--paso-2);
+  text-transform: uppercase;
+}
+
+.lateral dt:first-child {
+  margin-top: 0;
+}
+
+.lateral dd {
+  color: var(--tinta);
+  margin: 0.1rem 0 0;
+}
+
+.lateral ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lateral li {
+  border-bottom: 1px solid var(--regla);
+  margin: 0;
+  padding: 0.4rem 0;
+}
+
+.lateral li:last-child {
+  border-bottom: 0;
+}
+
+.lateral a {
+  color: var(--tinta-media);
+  text-decoration: none;
+}
+
+.lateral a:hover,
+.lateral a:focus {
+  color: var(--acento);
+}
+
+.pie {
+  border-top: 1px solid var(--regla-fuerte);
+  color: var(--tinta-suave);
+  font-size: 0.85rem;
+  padding-top: var(--paso-2);
+}
+
+.pie p {
+  margin: 0 0 0.35rem;
+}
+
+.pie a {
+  color: var(--tinta-media);
+}
+
+.nota {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+}
+
+.externo::after {
+  content: " \2197";
+  font-size: 0.85em;
+}
+
 @media (min-width: 640px) {
   h1 {
     font-size: 3.2rem;
@@ -610,6 +707,6 @@ img {
   }
 
   .tarjetas {
-    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   }
 }
