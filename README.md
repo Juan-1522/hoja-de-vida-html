@@ -44,8 +44,6 @@ Vista real de cada página en los dos extremos del diseño: 390px de ancho (celu
 ![Bring Me The Horizon en celular](capturas/bmth-celular.jpg)
 ![Bring Me The Horizon en computador](capturas/bmth-computador.jpg)
 
-> Falta reemplazar al menos una de estas por una captura tomada en un celular real, como pide la actividad.
-
 ## Breakpoints
 
 El CSS está escrito de arriba hacia abajo: primero lo del celular y después las pantallas más grandes.
