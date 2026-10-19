@@ -56,11 +56,11 @@ El CSS está escrito de arriba hacia abajo: primero lo del celular y después la
 
 ## Cómo lo publiqué
 
-1. Creé el repositorio `hoja-de-vida-html` en GitHub y lo dejé público.
-2. Subí el proyecto con git: `git remote add origin https://github.com/Juan-1522/hoja-de-vida-html.git` y `git push -u origin main`.
-3. Entré a **Settings → Pages**, elegí la rama `main` y la carpeta `/(root)` y guardé.
+1. Abrí la carpeta del proyecto en el editor (Visual) y desde ahí creé el repositorio `hoja-de-vida-html`.
+2. Puse el remote con la dirección de GitHub y desde el panel de Control de fuentes hice los commits y el primer push a la rama `main`.
+3. En GitHub entré a **Settings → Pages**, elegí la rama `main` y la carpeta `/(root)` y guardé.
 4. GitHub generó la dirección `https://juan-1522.github.io/hoja-de-vida-html/` y ahí quedó publicado.
-5. Revisé los enlaces e imágenes desde el sitio publicado y corregí las rutas que apuntaban a archivos que no existían.
+5. Revisé los enlaces y las imágenes desde el sitio publicado y corregí las rutas que apuntaban a archivos que no existían.
 
 ## Fuentes consultadas
 

@@ -843,6 +843,10 @@ body.fan {
   max-width: 11rem;
 }
 
+.galeria + p {
+  margin-top: var(--paso-3);
+}
+
 .salto {
   margin-top: var(--paso-3);
 }
