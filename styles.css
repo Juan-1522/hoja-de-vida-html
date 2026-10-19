@@ -315,3 +315,105 @@ img {
 .menu a.activo::before {
   color: rgba(251, 250, 247, 0.6);
 }
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  .cabecera {
+    padding: var(--paso-4) var(--paso-3);
+  }
+
+  .cabecera-interior {
+    grid-template-columns: 9.5rem 1fr;
+  }
+
+  .cargo {
+    font-size: 0.8rem;
+  }
+
+  .resumen {
+    font-size: 1.05rem;
+  }
+
+  .cabecera-pie {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .llamada {
+    margin-top: 0;
+  }
+
+  .menu ul {
+    flex-direction: row;
+  }
+
+  .menu a {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .principal,
+  .lateral {
+    padding: var(--paso-4) var(--paso-3);
+  }
+
+  .habilidades {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1080px) {
+  body {
+    padding: var(--paso-3);
+  }
+
+  h1 {
+    font-size: 3.6rem;
+  }
+
+  .contenedor {
+    gap: var(--paso-3);
+    grid-template-areas:
+      "cabecera cabecera cabecera"
+      "menu principal lateral"
+      "pie pie pie";
+    grid-template-columns: 13% minmax(0, 1fr) 21%;
+  }
+
+  .cabecera {
+    padding: var(--paso-5) var(--paso-4);
+  }
+
+  .cabecera-interior {
+    grid-template-columns: 11rem 1fr;
+  }
+
+  .menu {
+    align-self: start;
+    position: sticky;
+    top: var(--paso-3);
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu a {
+    flex: none;
+    justify-content: flex-start;
+  }
+
+  .principal {
+    padding: var(--paso-5) var(--paso-4);
+  }
+
+  .lateral {
+    align-self: start;
+    position: sticky;
+    top: var(--paso-3);
+  }
+}
